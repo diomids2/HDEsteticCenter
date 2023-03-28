@@ -850,7 +850,7 @@ section.our-courses .naccs .menu div {
   vertical-align: middle;
   font-weight: 900;
   transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
-  border: 3px solid rgba(219,138,222,0.5);
+  border: 3px solid rgba(242,176,199,1);
 }
 
 section.our-courses .naccs .menu div.active {
@@ -1092,12 +1092,144 @@ section.testimonials:after {
 }
 
 
+/*-------------------
+   Gallery Page
+ -------------------*/
 
-/* 
----------------------------------------------
-contact us
+ .gallery__page {
+	padding: 80px 15px 65px;
+}
+
+@media (max-width: 576px) {
+	.gallery__page {
+		padding: 30px 15px 65px;
+	}
+}
+
+.gallery__warp {
+	max-width: 1570px;
+	margin: 0 auto;
+}
+
+.gallery__item {
+	display: block;
+	margin-bottom: 30px;
+}
+
+.gallery__item img {
+	min-width: 100%;
+}
+
+.fr-position-outside {
+	left: 0;
+	top: 0;
+	right: auto;
+	bottom: auto;
+}
+
+.fr-position-text {
+	color: #fff;
+}
+
+
+
+/*---------------------------------------------
+List
 --------------------------------------------- 
 */
+
+
+
+.site-list {
+  padding: 0;
+  margin: 0; }
+  .site-list li {
+    margin: 0 0 100px 0;
+    padding: 0;
+    position: relative;
+    list-style: none; }
+    .site-list li:before {
+      font-family: 'icomoon';
+      position: absolute;
+      top: .1em;
+      left: 0; }
+    .site-list li.site-check {
+      padding-left: 30px; }
+      .site-list li.site-check:before {
+        color: #bac964;
+        font-size: 16px;
+        content: "\ebd3"; }
+
+.btn {
+  border-radius: 100px;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: .2rem; }
+  .btn:active, .btn:focus {
+    outline: none;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important; }
+  .btn.btn-primary {
+    color: #fff; }
+    .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
+      background: #b2c251; }
+
+.progress {
+  overflow: visible;
+  margin-bottom: 26px;
+  height: 4px; }
+  .progress .progress-bar {
+    background-color: #bac964;
+    position: relative;
+    border-radius: 4px; }
+    .progress .progress-bar span {
+      background-color: #bac964;
+      position: absolute;
+      bottom: -20px;
+      font-size: 10px;
+      line-height: 10px;
+      padding: 2px 3px 2px 4px;
+      right: -1.4em;
+      border-radius: 2px; }
+    .progress .progress-bar span:after {
+      bottom: 100%;
+      left: 50%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-color: rgba(255, 255, 255, 0);
+      border-bottom-color: #bac964;
+      border-width: 5px;
+      margin-left: -5px; }
+
+.skill h3 {
+  font-size: 18px; }
+
+.filters {
+  text-align: center; }
+  .filters ul {
+    padding: 0;
+    margin: 0 0 30px 0; }
+    .filters ul li {
+      display: inline-block;
+      cursor: pointer;
+      padding: 20px;
+      -webkit-transition: .3s all ease;
+      -o-transition: .3s all ease;
+      transition: .3s all ease; }
+      .filters ul li:hover {
+        color: #bac964; }
+      .filters ul li.active {
+        color: #bac964; }
+
+
+
+
+/*-----------------------------------*/
+
 
 section.contact-us {
   background-image: url(../images/footer-bg.png);
@@ -1138,8 +1270,8 @@ section.contact-us .contact-info .icon i {
   text-align: center;
   line-height: 50px;
   border-radius: 50%;
-  background: rgb(219,138,222);
-  background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%);
+  background: rgb(220,191,195);
+  background: linear-gradient(90deg, rgba(220,191,195,1) 0%, rgba(122,122,122,1) 100%);
   color: #fff;
 }
 
@@ -1206,8 +1338,8 @@ section.contact-us #contact button {
   float: right;
   font-size: 13px;
   color: #fff;
-  background: rgb(219,138,222);
-  background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%);
+  background: rgb(122,122,122);
+  background: linear-gradient(90deg, rgba(122,122,122,1) 0%, rgba(220,191,195,1) 100%);
   padding: 12px 30px;
   display: inline-block;
   border-radius: 5px;
