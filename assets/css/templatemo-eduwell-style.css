@@ -696,15 +696,49 @@ section.main-banner {
 .main-banner .right-image::after {
   position: absolute;
   background-image: url(../images/banner-right-dec.png);
+  
   width: 378px;
   height: 378px;
   content: '';
   right: -25%;
   z-index: 1;
+  
+}
+
+.main-banner #video .thump{
+  position: relative;
+  margin-left: -70px;
+}
+
+
+.main-banner .right-image .play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.main-banner .right-image .play-button a {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+  text-align: center;
+    overflow: hidden;
+
+  line-height: 80px;
+  border-radius: 50%;
+  transform: translate(-40px, -40px);
+  color: #fff;
+  font-size: 22px;
+  background: rgb(220,191,195);
+  background: linear-gradient(90deg, rgba(220,191,195,0.8239670868347339) 0%, rgba(122,122,122,1) 100%);
+  
 }
 
 .main-banner .header-text::after {
-  position: absolute;
+
   background-image: url(../images/banner-left-dec.png);
   width: 214px;
   height: 429px;
@@ -743,6 +777,11 @@ section.main-banner {
   position: relative;
   z-index: 2;
 }
+
+/*
+   Modal
+*/
+
 
 
 /*
@@ -1767,7 +1806,20 @@ section.our-office #video img {
   border-radius: 20px;
 }
 
+.play-button a {
+width: 80px;
+height: 80px;
+display: inline-block;
+text-align: center;
+line-height: 80px;
+border-radius: 50%;
+transform: translate(-40px, -40px);
+color: #fff;
+font-size: 30px;
+background: rgb(219,138,222);
+background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%);
 
+}
 
 /*
 ---------------------------------------------
