@@ -22,6 +22,12 @@
     <link rel="stylesheet" href="assets/css/lightbox.css">
     <link rel="stylesheet" href="assets/css/modal.css">
 
+
+    <link rel="stylesheet" href="assets/css/patrix.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+
   </head>
 
 <body>
@@ -82,27 +88,20 @@
           <div id="video">
          <div class="thumb">
           <div class="right-image">
+            
             <img src="assets/images/banner-right-image.png" alt="">
             
             <div class="play-button" id="open-modal">
-              <a rel="nofollow" href="/assets/images/videos/1.mp4" target="_blank"><i class="fa fa-play"></i></a>
+            <a href="#" class="glightbox position-absolute top-50 start-50 translate-middle" target="_blank"><i class="fa fa-play"></i>
+
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
             </div>
           </div>
-     <!-- modal  -->
 
-
-         
-        
-          
-        
-        
-
-          </div>
-        </div>
-        </div>
-    </div>
-
-  <!-- ***** Main Banner Area End ***** -->
 
   
   <section class="services" id="services">
@@ -513,6 +512,23 @@
     <script src="assets/js/video.js"></script>
     <script src="assets/js/slick-slider.js"></script>
     <script src="assets/js/custom.js"></script>
+
+    <script src="/vendor/glightbox/js/glightbox.min.js"></script>
+
+    <script type="text/javascript">
+      const lightbox = GLightbox({
+        'touchNavigation': true,
+        'href': 'https://www.youtube.com/embed/vCkAqFw2NCk',
+        'type': 'video',
+        'source': 'youtube', //vimeo, youtube or local
+        'width': 720,
+        'autoPlayVideos': 'true',
+});
+    
+    </script>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
     <script>
         //according to loftblog tut
         $('.nav li:first').addClass('active');
